@@ -7,7 +7,7 @@
     
 }
 body {
-  background-image: url('images/background3.png');
+  background-image: url('./images/background3.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slide 10s infinite;
+  
   
 }
 .header{
@@ -106,23 +106,7 @@ h6{
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
-@keyframes slide{
-    25%{
-      background-image: url('../images/background.png') ;
-    }
-    50%{
-      background-image: url('../images/background2.png') ;
-    }
-    75%{
-      background-image: url('../images/background3.png') ;
-    }
-    100%{
-      background-image: url('../images/background4.png') ;
-    }
-    1%{
-      background-image: url('../images/background.png') ;
-      }
-    }
+
   @media (min-width: 768px) {
     .header .button{
       min-width: 120px;
