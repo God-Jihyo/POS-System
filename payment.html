@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Brew | Payment</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="payment.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-vB+2B+K24t7xkIecqg9ZqfbVFrTG9t7PyUdV8L+67lS39V4t46jYxI5ZAgv5MRQj7S3ZcUcUw3Q5r77M+fDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+<div class="container">
+    <div class="checkoutLayout">
+        <div class="right">
+            <h1>Payment</h1>
+            <br><br>
+            <div class="row">
+                <div>Total Price:</div>
+                <div class="totalPrice">₱900</div>
+            </div><br><br>
+            <div class="group">
+                <label for="name">Enter Amount:</label>
+                <input type="text" name="amount" id="amount">
+            </div>
+            <div class="form">
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('1')">1</button>              
+                <button id="dot" onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="eraseLastDigit()">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                  
+            </div>     
+            <button class="buttonCheckout" role="button" onclick="location.href='payment.html'">Pay</button>
+            </div>
+          </div>
+          </div>
+        <script src="payment.js"></script>
+
+</body>
+</html>

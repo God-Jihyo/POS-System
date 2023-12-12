@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Brew | Checkout</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="checkoutLayout">
+
+
+
+        <div class="right">
+            <h1>Checkout</h1>
+            <br>
+            <div class="form">
+                <div class="group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+    
+                <div class="group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="group">
+                    <label for="city">City</label>
+                    <select name="city" id="city">
+                        <option value="">Choose..</option>
+                        <option value="">Caloocan City</option>
+                        <option value="">Valenzuela City</option>
+                        <option value="">Quezon City</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="">Choose..</option>
+                        <option value="">Philippines</option>
+                    </select>
+                </div>
+    
+               
+            </div>
+            <div class="return">
+                <div class="row">
+                    <div>Total Quantity</div>
+                    <div class="totalQuantity">70</div>
+                </div>
+                <div class="row">
+                <div>Shipping Fee:</div>
+                <div class="shipping">₱34.75</div>
+                </div>  
+                <div class="row">
+                    <div>Total Price</div>
+                    <div class="totalPrice">₱900</div>
+                </div>
+            </div>
+            <button class="buttonCheckout" role="button" onclick="location.href='payment.html'">Proceed To Pay</button>
+
+            </div>
+    </div>
+</div>
+
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

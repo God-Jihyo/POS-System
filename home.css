@@ -1,0 +1,924 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    padding: 2rem 1%;
+}
+
+/* Header Styles */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 1.5rem 5%; 
+    z-index: 0;
+    display: flex;
+    align-items: center;
+   
+}
+
+.header .logo {
+    
+    width: 8%;
+    height: 9vh;
+    z-index: 1000;
+   
+}
+
+.header .navbar {
+    flex-grow: 0.9;
+    display: grid;
+    justify-content: center;
+
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    
+}
+.header .navbar a {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    background: transparent;
+    position: relative;
+
+   
+    
+}
+
+.header.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background:rgb(187, 67, 34);
+    transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+    color: rgb(187, 67, 34); 
+    
+}
+.navbar a:hover:before {
+    width: 100%;
+  
+}
+
+.header #toggler {
+    display: none;
+}
+
+#bars {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid black;
+    display: none;
+}
+
+
+
+/* Home Styles */
+.home {
+    display: grid;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+    background: url(images/BREW.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.home .text {
+    max-width: 50rem;
+    text-align: center;
+}
+
+.home .text h3 {
+    font-size: 9rem;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: -25%;
+}
+.home span{
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(187, 67, 34);
+}
+
+.home .text p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:800;
+}
+
+
+
+.home hr {
+    border: none;
+    height: 3px;
+    width: 250px;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+.home .btn {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5rem;
+    background-color: transparent;
+    padding-top: 1.2rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: white;
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 2s ease-in-out;
+}
+
+.btn:hover {
+    border: none;
+    background-color: #ca7968;
+    background-image: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
+}
+
+/* About Styles */
+.about {
+
+    min-height: 100vh;
+    background: rgb(2, 1, 28);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px; 
+}
+.about .container {
+    display: flex;
+    justify-content: center; 
+    margin: 2px;
+}
+.about .text{
+    padding: 2.8rem;
+}
+
+.about h1{
+    margin-top: 2%;
+    font-size: 40px;
+    color:#e64322;
+    margin: 20px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.about hr{
+    border: none;
+    height: 1.8px;
+    width: 55px;
+    background-color: #cf3b1d;
+    margin: 10px auto;
+}
+.about p{
+    
+    color: rgb(230, 230, 230);
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    
+}
+.about span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about .video-container video{
+    height: 80%;
+    width: 52rem;
+    z-index: 1;
+    margin: 10% 10% ;
+    
+}
+.about .text h1{
+    color:#e64322;
+    text-align: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.about .text p{
+    text-align: center;
+    color: white;
+    text-align: left;
+    margin: 2% 10% ;
+    
+}
+.text .btn2 {
+    
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5rem;
+    background-color:transparent;
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 33px;
+    padding-top: 1.2rem;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.text .btn2:hover {
+    border: none;
+    background-color: #e64322;
+}
+/*services page*/
+.services{
+    min-height: 100vh;
+    background: url(images/brew2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.services .serviceheader{
+    margin: 50px auto 0;
+    text-align: center;
+}
+.services h3{
+    font-family: 'Caveat', cursive;
+    color: #cf3b1d;
+    padding: 4px;
+    
+}
+.services h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+}
+
+.serviceheader hr{
+    border: none;
+    height: 1.8px;
+    width: 55px;
+    background-color: #cf3b1d;
+    margin: 10px auto;
+}
+.services .container {
+    display: flex;
+    justify-content: center; 
+    margin: 20px;
+}
+
+.service1, .service2, .service3 {
+    margin: 15px; 
+
+}
+.servicesimg1, .servicesimg2{
+    height: 170px;
+    width: 250px;
+}
+.service1 h1{
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 12px;
+    margin: 7px 0;  
+}
+.service1 p{
+    color: rgb(195, 195, 195);
+    font-size: 9.6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8px 0;
+    text-align:justify;
+    width: 250px; 
+    white-space: nowrap; 
+    line-height: 1.5;
+}
+.service1 a{
+    color: #cf3b1d ;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.service2 h1{
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 12px;
+    margin: 7px 0;  
+}
+.service2 p{
+    color: rgb(195, 195, 195);
+    font-size: 9.6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8px 0;
+    text-align:justify;
+    width: 250px; 
+    white-space: nowrap; 
+    line-height: 1.5;
+}
+.service2 a{
+    color: #cf3b1d ;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.service3{
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.683);
+    width: 250px;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.service3 h1{
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+.service3 .date{
+    display: flex;
+    color: white;
+    font-size: 7px;
+    justify-content: space-between;
+    
+}
+.day h2, .time h2{
+    font-family:'Open Sans', sans-serif;
+    padding-bottom: 15px;
+}
+.time .closed{
+    font-size: 10px;
+    font-family:'Open Sans', sans-serif;
+    color: #cf3b1d ;
+    font-weight: bold;
+}
+
+/*menus page*/
+.menus{
+    background:rgb(2, 1, 28);
+}
+.menus .menuheader{
+    margin: 30px auto 0;
+    text-align: center;
+}
+.menus .menuheader h1{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+}
+.menus .menuheader hr{
+    border: none;
+    height: 1.8px;
+    width: 55px;
+    background-color: #cf3b1d;
+    margin: 10px auto;
+}
+.menus .menuheader h2{
+    font-family: 'Caveat', cursive;
+    color: #cf3b1d;
+    padding: 4px;
+}
+.menus .container{
+    width: 90vw;
+    margin: auto;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    
+}
+
+
+
+.menus .container header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 10px;
+}
+
+.header .shopping{
+    position: relative;
+    text-align: right;
+    z-index: 1;
+}
+
+.header .shopping i{
+    
+    padding: 1rem 5%; 
+    font-size: 1.5rem;
+    color: #efefef;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    
+}
+
+.header .shopping i:hover{
+    color:  #cf3b1d; 
+}
+
+ .header .shopping span{
+    position: absolute;
+    top: 0px;
+    left: 81%;
+    background: red;
+    padding: 3px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ---------------- */
+
+.card{
+    position: fixed;
+    top: 0;
+    left: 100%; 
+    width: 400px;
+    height: 100vh;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    border-left: 1px solid #000000;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: 2;
+}
+
+.active .card{
+    left: calc(100% - 400px);
+}
+
+.active .container{
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+}
+
+.card h1{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(3, 2, 65);
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card .checkOut div{
+    background-color: #cf3b1d;
+    color: #efefef;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1c1f25;
+    color: #efefef;
+}
+.card .checkout .total{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.menus .container .list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);;
+    gap: 30px;
+    margin-top: 50px;
+    
+    z-index: -1;
+}
+
+.list .item{
+    border: 0.5px solid rgba(255, 255, 255, 0.336);
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+    letter-spacing: 1px;
+    transition: all 0.25s ease ;
+    -webkit-transition: all 0.25s ease ;
+    -moz-transition: all 0.25s ease ;
+    -ms-transition: all 0.25s ease ;
+    -o-transition: all 0.25s ease ;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+.list .item:hover{
+    background-color: #1d2940;
+}
+
+.list .item img{
+    width: 90%;
+    height: 250px;
+}
+
+.list .item .title{
+    font-weight: 600;
+    color: #efefef;
+}
+
+.list .item .price{
+    margin: 10px;
+    color: #efefef;
+}
+
+.list .item button{
+    font-family:'Open Sans', sans-serif;
+    background-color: #35496f;
+    color: #efefef;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #efefef;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+.list .item button:hover{
+    background-color: #cf3b1d;
+    color: #efefef;
+}
+
+
+/* ---------------------- */
+
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+
+.listCard .count{
+    margin: 0 10px;
+    color: #1c1f25;
+    font-size: 1.2rem;
+}
+
+.cardTitle, .cardPrice{
+    color: #1c1f25;
+}
+
+.cardButton{
+    width: 28px;
+    height: 28px;
+    color: #efefef;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*review page*/
+.review{
+
+    min-height: 100vh;
+    background: rgb(2, 1, 28);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem; 
+    
+}
+.review .heading {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 1rem;
+    margin:2rem 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(5, 2, 61, 0.63);
+}
+.review .heading span{
+    color: #cf3b1d;
+    font-family: 'Open Sans', sans-serif;
+}
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+    
+}
+
+.review .box-container .box {
+    background-color: #ffffff;
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1rem rgba(83, 82, 82, 0.628);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.review .box-container .box .fa-quote-right {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #0c0c0c;
+}
+.review .box-container .box .stars {
+    position: absolute;
+    top: 3.4rem;
+    left: 9rem;
+}
+.review .box-container .box .stars i {
+    
+    
+    color: gold;
+    font-size: 1rem;
+}
+
+.review .box-container .box p {
+    color: #3a3a3a;
+    font-size: 1.5rem;
+    font-family:sans-serif;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+}
+
+.review .box-container .box .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+    font-family:'Open Sans', sans-serif;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: #191919;
+}
+.review .button {
+   display: flex;
+   justify-content: center;
+}
+.review .buttons {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5rem;
+    background-color:transparent;
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 33px;
+    padding-top: 1.2rem;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+   
+}
+.review .buttons:hover {
+    border: none;
+    background-color: #e64322;
+}
+/*Contact Page*/
+.contact img{
+    margin: 0;
+    height: 100vh;
+    width: 45%;
+}
+.contact{
+    min-height: 30vh;
+    background: rgb(2, 1, 28);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.contact hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(252, 252, 252, 0.267);
+    margin:auto;
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .container h1{
+    margin: 1.7rem -5rem;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.contact .container h2{
+    
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact .container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .container2 h3{
+    margin-top: -6rem;
+    margin-left: 0rem;
+    color: rgb(199, 199, 199);
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact .container2 .links {
+    margin-top: -3rem;
+    margin-left: 5rem;
+}
+.contact .container2 .links li{
+    color: rgb(199, 199, 199);
+}
+.contact .container2 .links li a{
+   
+    color: rgb(199, 199, 199);
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact .icons {
+    margin-top: -2rem;
+    color: rgb(199, 199, 199);
+    
+    
+    
+}
+.contact .icons h1{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px){
+
+    header #bars{
+        display: block;
+    }
+    header .logo{
+        display: none;
+    }
+    @media (max-width: 768px) {
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgb(5, 5, 5);
+            border-top: .1rem solid black;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            clip-path: polygon(0 0,100% 0, 100% 0,0 0);
+        }
+        header #toggler:checked ~ .navbar{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        header .navbar a {
+            margin: 1.5rem;
+            padding: 1.5rem;
+            background: rgb(0, 0, 0);
+            border: .1rem solid rgba(0, 0, 0, .1);
+            display: block;
+        }
+    }
+    header .icon {
+        margin-top: auto; 
+    }
+    
+    .icon a {
+        color: white;
+        margin-right: 10px;
+    }
+    
+    .icon a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .icon a:hover:before {
+        width: 100%;
+    }
+}
